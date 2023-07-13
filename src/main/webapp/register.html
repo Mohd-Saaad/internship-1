@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="head">
+        <h1>Customer Registration Form</h1>
+    </div>
+        <div class="container">
+            <form action="connect.jsp" method="post">
+    <!-- Username -->
+                <div>
+                    <label class="lbl" >Name :
+                        <input type="text" name="username" id="name" class="regText"  style="margin-left: 77px;" placeholder="Enter your name" minlength="4" maxlength="20" required></label>
+                </div>
+                <br>
+    <!-- email ID -->
+                <div>
+                    <label class="lbl" >Email ID &nbsp; :
+                        <input type="text" name="password" id= "email" name="email" class="regText"  placeholder="Enter your email ID" required></label>
+                </div>
+                <br>
+    <!-- phone number -->
+                <div>
+                    <label class="lbl">Phone number :
+                        <input type="number" name="phone_number" class="regText" style="margin-left: 19px;" placeholder="Enter your phone no." maxlength="10"></label>
+                </div>
+                <br>
+    <!-- IFSC code -->
+                <div>
+                    <label class="lbl">IFSC code :
+                        <input type="text" name="ifsc" class="regText"name="ifsc" style="margin-left: 47px;" id="ifsc" placeholder="Enter Your bank's IFSC code" required></label>
+                </div>
+                <br>
+    <!-- Aadhar Card -->
+                <div>
+                    <label class="lbl"> Aadhar Card No. :
+                        <input type="number" name="aadhar" class="regText" style="margin-left: 0px;" id="aadhar" placeholder="Enter Your Aadhar card no." maxlength="12"></label>
+                </div>
+                <br>
+    <!-- Pan Card -->
+                <div>
+                    <label class="lbl">PAN card No.:
+                        <input type="text" name="pan_card" class="regText" style="margin-left: 28px;" id="pan" placeholder="Enter Your PAN card no." required></label>
+                </div>
+                <br>
+    <!-- Address -->
+                <div>
+                    <label class="lbl">Address:
+                        <input type="text" class="regText" style="margin-left: 70px;" placeholder="Enter Your Address" required></label>
+                </div>
+                <br>
+    <!-- New password -->
+                <div>
+                    <label class="lbl">Set New password :
+                        <input type="password" class="regText" style="margin-left: 0px;" placeholder="Enter password" minlength="8" required></label>
+                </div>
+                <br>
+    <!-- Confirm password
+                <div>
+                    <label class="lbl">Confirm Password:
+                        <input type="password" class="regText" style="margin-left: 0px;" placeholder="Enter password" minlength="8" required></label>
+                </div>
+                <br> -->
+    <!-- Remember me -->
+                <div>
+                    <input type="checkbox" checked="checked">Remember me
+                </div>
+    <!-- Login -->
+                <div class="sameline">
+                    <button class="cBtn" onclick={validate()} type="submit">Sign-Up <a href="welcome.html"></a></button>
+                    <span class="alnRt">Forgot <a href="welcome.html">password ?</a></span>
+                </div>
+
+            </form>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+html,body{
+    height: 100%;
+}
+/* nav-bar */
+.navbar{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: aliceblue;
+
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    padding: 1rem;
+    color: aliceblue;
+    display: block;
+}
+
+.navbar-links li:hover{
+    background-color: gray;
+    border-radius: 5px;
+}
+
+/* toggle-button */
+
+.toggle-btn{
+    display: none;
+    position: absolute;
+    top: 2rem;
+    right: 1.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+
+.toggle-btn .bar{
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+@media (max-width : 700px) {
+    .toggle-btn{
+        display: flex;
+    }
+    .navbar, .navbar-links ul{
+        flex-direction: column;
+    }
+    .navbar-links{
+        width: 100%;
+        /* display: none; */
+    }
+    .navbar-links li{
+        text-align: center;
+    }
+    .navbar-links li a{
+        padding: .5rem 1rem;
+    }
+    .navbar-links.active{
+        display: none;
+    }
+}
+.online-banking{
+    font-size: 3rem;
+    position: relative;
+    text-align: left;
+    margin: .5rem;
+}
+
+.menu{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.newPay,.prevPay,.upPayee {
+    height: 50px;
+    width: 30vh;
+    margin: 10px;
+    background-color: #d89292;
+    text-align: center;
+    font-size: 2em;
+    border-radius: 5px;
+}
+
+.sBtn,.dBtn{
+    height: 35px;
+    border-radius: 5px;
+}
+.user-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    margin: 0,auto ;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2rem; 
+    background-color: lightblue;
+    width: 40rem;
+    border-radius: 30px;
+}
+.card label{
+    font-size: 2rem;
+}
+.card input{
+    border-radius: 15px;
+    padding: 12px;
+}
+.container{
+    background-image: url(./Images/upPay.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-form{
+    margin-top: 5rem;
+    background-color: lightskyblue;
+    width: 20rem;
+    padding: 20px;
+    border-radius: 30px ;
+}
+.flex-input input{
+    border-radius: 15px;
+    padding-left: 10px;
+}
+.flex-input{
+    font-size: 20px;
+    display: flex;
+    margin-top: 20px;
+    
+    margin-bottom: 20px;
+}
+.flex-input label{
+    flex-basis: 130px;
+}
+.sBtn{
+    
+    font-size: 18px;
+    display: flex;
+    color: white;
+    align-items: center;
+    background-color: darkviolet;
+}
+.sBtn:hover{
+    background-color: rgb(86, 3, 212);
+}

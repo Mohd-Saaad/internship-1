@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Payee</title>
+    <link rel="stylesheet" href="upPayee.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="online-banking">Online Banking</div>
+
+        <!-- Toggle button -->
+        <a href="#" class="toggle-btn" id="tBtn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <!-- Nav-Bar -->
+        <div class="navbar-links" id="navId">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Check Balance</a></li>
+                <li><a href="#">Change Password</a></li>
+                <li><a href="#">Log Out</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- main  -->
+    <!-- <div class="user-cards">
+        <div class="card" style="display: block; background-color: gray;text-align: center;color: turquoise;width: 300px;">
+                <label>Update Payee</label>
+           
+        </div>
+        <div class="card">
+            <span>
+                <label>Account Number :</label>
+                <input type="text" name="accNo" id="" placeholder="Enter Account Number" maxlength="15">
+            </span>
+           
+        </div>
+        <div class="card">
+            <span>
+                <label>Name :</label>
+                <input type="text" name="name" id="" placeholder="Enter Name" maxlength="30">
+            </span>
+            
+        </div>
+        <div class="card">
+            <span>
+                <label>IFSC Number :</label>
+                <input type="text" name="ifscCode" id="" placeholder="Enter IFSC Number" maxlength="15">
+            </span>
+            
+        </div>
+        <div class="card">
+            <span>
+                <button class="sBtn" type="submit">Save</button>
+                <button class="dBtn" type="submit">Delete Account</button>
+            </span>...
+           
+        </div>
+        <div class="card">
+        </div>
+    </div> -->
+
+    <!-- new form  -->
+
+    <div class="container">
+        <form action="payee.jsp" method="post" class="login-form">
+            <h1>Update Payee</h1>
+            <div class="flex-input">
+                <label>Account Number :</label>
+                <input type="text" name="accNo" id="" placeholder="Enter Account Number" maxlength="15">
+
+            </div>
+            <div class="flex-input">
+
+                <label>Name :</label>
+                <input type="text" name="name" id="" placeholder="Enter Name" maxlength="30">
+            </div>
+
+            <div class="flex-input">
+
+                <label>IFSC Number :</label>
+                <input type="text" name="ifscCode" id="ifsc" placeholder="Enter IFSC Number" maxlength="15">
+            </div>
+
+            <button class="sBtn" type="submit">Save</button>
+
+        </form>
+    </div>
+
+</body>
+
+</html>

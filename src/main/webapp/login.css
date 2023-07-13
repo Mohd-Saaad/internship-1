@@ -1,0 +1,68 @@
+html,body{
+    min-height: 100%;
+}
+body{
+    background-image: linear-gradient(153deg, #1727d8 10%, #b91bbe 100%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.head{
+    text-align: center;
+    color: aliceblue;
+}
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+.container{
+    background-color: #81b4e4;
+    padding: 25px;
+    border-radius: 20px;
+    width: 350px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.AvaImage{
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.loginText{
+    display: inline-block;
+    border: 1px sienna;
+    box-sizing: border-box;
+    height: 40px;
+    /* width: 70%; */
+    border-radius: 5px;
+    padding-left: 5px;
+    margin-left: 10px;
+    margin-right: 0%    ;
+}
+.regText{
+    display: inline-block;
+    border: 1px sienna;
+    box-sizing: border-box;
+    height: 40px;
+    /* width: 70%; */
+    border-radius: 5px;
+    padding-left: 5px;
+    margin-left: 47px;
+    margin-right: 0%    ;
+}
+.lbl{
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+}
+.cBtn{
+    margin-top: 15px;
+    width: 85px;
+    height: 35px;
+    border-radius: 5px;
+}
+.alnRt{
+    margin-left: 100px;
+}
+.sameline{
+    display: inline;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Payment</title>
+    <link rel="stylesheet" href="flex.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="online-banking">Online Banking</div>
+
+    <!-- Toggle button -->
+        <a href="#" class="toggle-btn" id="tBtn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+    <!-- Nav-Bar -->
+        <div class="navbar-links" id="navId">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Check Balance</a></li>
+                <li><a href="#">Change Password</a></li>
+                <li><a href="#">Log Out</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+<!-- new payee -->
+
+    <div style="text-align: center; font-size: 30px; padding: 20px 20px;">Add new Payee</div>
+    
+    <div class="box" style="flex-direction: column; height: 200px;">
+        <label class="accNo">Account Number:
+            <input type="number" placeholder="Enter Account Number" maxlength="15">
+        </label>
+        <label class="payeeName">Payee Name:
+            <input type="text" placeholder="Enter Payee name" maxlength="30">
+        </label>
+        <label class="bankName">Bank name:
+            <input type="text" placeholder="Enter the Bank name" maxlength="15">
+        </label>
+        <label class="ifscCode">Account Number:
+            <input type="text" placeholder="Enter the IFSC code" maxlength="15">
+        </label>
+        <button type="submit">Save</button>
+    </div>
+
+<!--Search existing payee -->
+
+    
+    <div style="text-align: center; font-size: 30px; padding: 20px 20px;">Or</div>
+    
+    <div style="text-align: center; font-size: 30px;margin-bottom: 20px;">Search Existing Payee</div>
+    <div class="box">
+        <input type="text" placeholder="Search for Account number" >
+        <a href="#">
+            <button class="search">search</button>
+        </a>
+    </div>
+
+</body>
+</html>

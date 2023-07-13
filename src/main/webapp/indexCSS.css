@@ -1,0 +1,33 @@
+body{
+background-image: linear-gradient(153deg, #FAB2FF 10%, #1904E5 100%);
+font-family: cursive;
+}
+.services{
+    text-align: center;
+    font-size: 80px;
+}
+.image{
+    display: block;
+    width: 50%;
+    height: 50%;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.para{
+    text-align: center;
+}
+button{
+    background-color: rgb(10, 10, 10);
+    display: block;
+    margin: auto;
+    width: 25%;
+    color: white;
+    padding: 15px 30px;
+    border: 0cap;
+    font-size: 18px;
+    border-radius: 10px;
+}
+.us,.aus{
+    text-indent: 5%;
+}
