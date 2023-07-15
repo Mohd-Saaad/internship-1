@@ -3,8 +3,9 @@ import java.sql.*;
 public class GetCon {
 private GetCon() {}
 
-public static Connection con;
-	static {
+public static Connection getCon() 
+ {
+	Connection con = null;
 		try {
 			Class.forName(DBinitializer.driver);
 			con = DriverManager.getConnection(DBinitializer.url,DBinitializer.serverName,DBinitializer.serverPwd);
@@ -18,12 +19,7 @@ public static Connection con;
 			
 			System.out.println("Exception in GetCon");
 		}
+		return con;
 	}
 	
-public static Connection getCon() {
-	return con;
-}
-	
-
-
 }

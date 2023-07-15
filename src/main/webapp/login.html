@@ -14,22 +14,23 @@
        
     <img class="AvaImage" src="./Images/456322.webp" alt="Avatar image">
 <div class="container">
-    <form >
+    <form action="LoginServlet" method="get">
         <div>
             <label class="lbl">UserName :
-            <input type="text" class="loginText" placeholder="Enter Username" required></label>
+            <input type="text" name="uname" class="loginText" placeholder="Enter Username" required></label>
         </div>
         <br>
             <div>
                 <label class="lbl">Password &nbsp; :
-            <input type="password" class="loginText" placeholder="Enter Password" required></label>
+            <input type="password" name="pass" class="loginText" placeholder="Enter Password" required></label>
             </div>
             <div>
                 <input type="checkbox" checked="checked">Remember me
             </div>
 
-            <div class="sameline">
-            <button class="cBtn" type="submit">Login</button>
+            <div class="sameline"><!--
+            <button class="cBtn" type="submit">Login</button>-->
+            <input type="submit" value="submit">
             <span class="alnRt">Forgot <a href="#">password ?</a></span>
             </div>
             
